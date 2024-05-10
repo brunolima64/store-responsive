@@ -13,6 +13,7 @@ export const Container = styled.div`
     img {
         width: 200px;
         height: auto;
+        flex: 1;
     }
 
     .title {
@@ -75,8 +76,8 @@ export const Container = styled.div`
         }
 
         button {
-            padding: 10px 15px; 
+            padding: 5px 10px; 
             font-size: 12px; 
-    }
+        }
     }
 `;

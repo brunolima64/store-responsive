@@ -14,7 +14,6 @@ export const Products = ({item, handleAddItem}: Props) => {
             <p className='price'>R$ {item.price}</p>
 
             <button onClick={handleAddItem}>Adicionar ao Carrinho</button>
-        
         </C.Container>
     )
 }

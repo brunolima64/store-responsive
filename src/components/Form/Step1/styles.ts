@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 
-export const Form = styled.div`
+export const Form = styled.form`
     width: 350px;
     padding: 30px 30px;
     display: flex;
@@ -9,6 +9,11 @@ export const Form = styled.div`
     flex-direction: column;
     box-shadow: 0px 0px 2px #ccc;
     border-radius: 12px;
+
+    @media (max-width: 400px) {
+        width: 250px;
+        padding: 15px 15px;
+    }
 `;
 
 export const Prev = styled.div`
@@ -46,6 +51,10 @@ export const Input = styled.input`
     background-color: transparent;
     border: 0;
     border-bottom: 1px solid gray;
+
+    @media (max-width: 400px) {
+        font-size: 14px;
+    }
 `;
 
 export const ButtonArea = styled.div`
@@ -66,6 +75,13 @@ export const ButtonArea = styled.div`
 
         &:hover {
             opacity: .7;
+        }
+    }
+
+    @media (max-width: 400px) {
+        
+        button {
+            font-size: 14px;
         }
     }
 `;

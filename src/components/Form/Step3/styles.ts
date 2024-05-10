@@ -9,6 +9,11 @@ export const Form = styled.div`
     flex-direction: column;
     box-shadow: 0px 0px 2px #ccc;
     border-radius: 12px;
+
+    @media (max-width: 400px) {
+        width: 250px;
+        padding: 15px 15px;
+    }
 `;
 export const Prev = styled.div`
     width: 100%;
@@ -24,7 +29,7 @@ export const Prev = styled.div`
 `;
 
 export const Title = styled.div`
-    font-size: 25px;
+    font-size: 22px;
     margin: 10px 0;
     text-align: center;
 `;
@@ -33,11 +38,21 @@ export const Body = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
+    color: #ccc;
     
     p {
         text-align: center;
         line-height: 25px;
         margin: 10px 0;
+    }
+
+    @media (max-width: 400px) {
+        
+        p {
+            line-height: 20px;
+            margin: 10px 0;
+            font-size: 14px;
+        }
     }
 `;
 
@@ -59,6 +74,13 @@ export const ButtonArea = styled.div`
 
         &:hover {
             opacity: .7;
+        }
+    }
+
+    @media (max-width: 400px) {
+        
+        button {
+            font-size: 14px;
         }
     }
 `;

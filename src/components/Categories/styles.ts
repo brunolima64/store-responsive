@@ -13,14 +13,14 @@ export const Container = styled.div`
     }
 
     div {
-        width: 100px;
-        height: 100px;
+        width: 80px;
+        height: 80px;
         border-radius: 50%;
         background-color: #FFF;
     }
     img {
-        width: 80px;
-        height: 80px;
+        width: 60px;
+        height: 60px;
         padding: 10px;
     }
 
@@ -44,9 +44,7 @@ export const Container = styled.div`
     }
 
     @media (max-width: 400px) {
-        margin: 0;
-        flex-direction: row;
-        width: 150px;
+        width: 140px;
         height: 80px; 
 
         div {

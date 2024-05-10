@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { FormContext } from "../../../contexts/FormContext";
 import * as C from './styles';
+import { GenerateMessage } from "../../../services/GenerateMessage";
 
 type Props = {
     setCurrentStep: (n: number) => void;
@@ -9,7 +10,7 @@ type Props = {
 export const Step3 = ({ setCurrentStep, setShowForm }: Props) => {
     const formCtx = useContext(FormContext);
     
-    const message = 'oi tudo bem?';
+    const message = GenerateMessage(); //GerenerateMessage é uma função auxiliar para montar a menssagem.
     const linkZap = `https://wa.me//${import.meta.env.VITE_NEXT_PUBLIC_ZAP}?text=${encodeURI(message)}`;
     
     const handleCloseModal = () => {
@@ -25,7 +26,7 @@ export const Step3 = ({ setCurrentStep, setShowForm }: Props) => {
             <C.Body>
                 <p>Perfeito <strong>{formCtx?.name}</strong>!</p>
                 <p>
-                    Agora envie o seu pedido para o nosso WhatsApp para concluir.
+                    Agora envie o seu pedido para o nosso WhatsApp para concluir. <br />
                     Nosso atendente irá te guiar sobre o andamento do pedido.
                 </p>
             </C.Body>
