@@ -3,9 +3,8 @@ import * as C from './styles'
 
 type Props = {
     setShowCart: () => void;
-    showCart: boolean;
 }
-export const Header = ({ setShowCart, showCart }: Props) => {
+export const Header = ({ setShowCart }: Props) => {
     
     return (
         <C.PageContainer>

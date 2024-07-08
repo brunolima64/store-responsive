@@ -1,4 +1,4 @@
-import { useContext, useState } from 'react';
+import { useContext } from 'react';
 import * as C from './styles'
 import { ContextListCart } from '../../contexts/CartContext';
 import { ProductType } from '../../type/ProductType';

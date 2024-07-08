@@ -81,7 +81,7 @@ export const App = () => {
 
     return (
         <C.PageContainer>
-            <Header setShowCart={()=>setShowCart(!showCart)} showCart={showCart}/>
+            <Header setShowCart={()=>setShowCart(!showCart)} />
             {showCart &&
                 <CartModal 
                     setShowCart={()=>setShowCart(!showCart)} 
