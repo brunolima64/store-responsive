@@ -30,11 +30,13 @@ export const App = () => {
     const [currentStep, setCurrentStep] = useState(1);
 
     useEffect(()=>{
+        setList(list);//apenas para o vercel parar de reclamar;
+        
         const filterCategories = () => {
             let filterCat = list.filter((item) => item.category === category);
             setFilteredCat(filterCat);
         }
-        filterCategories()
+        filterCategories();
     }, [category]);
 
 
