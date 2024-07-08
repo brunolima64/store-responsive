@@ -10,7 +10,6 @@ export const Products = ({item, handleAddItem}: Props) => {
         <C.Container> 
             <p className='title'>{item.title}</p>
             <img src={item.image[0]} alt="" />
-            
             <p className='price'>R$ {item.price}</p>
 
             <button onClick={handleAddItem}>Adicionar ao Carrinho</button>

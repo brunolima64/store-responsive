@@ -37,6 +37,10 @@ export const AreaInput = styled.div`
     display: flex;
     flex-direction: column;
     margin: 17px 0;
+
+    p {
+        color: #f9220e;
+    }
 `;
 
 export const Input = styled.input`

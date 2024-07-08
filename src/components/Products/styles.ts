@@ -22,7 +22,7 @@ export const Container = styled.div`
         text-align: center;
         margin: 10px;
     }
-
+    
     .price {
         font-size: 17px;
         text-align: end;

@@ -32,6 +32,7 @@ export const Title = styled.div`
     font-size: 22px;
     margin: 10px 0;
     text-align: center;
+    text-shadow: 0px 0px 4px #ccc;
 `;
 
 export const Body = styled.div`
