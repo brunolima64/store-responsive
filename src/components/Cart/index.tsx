@@ -1,5 +1,5 @@
 import * as C from './styles'
-import CART from "../../../public/assets/images/icons8-cart-48 (2).png";
+import CART from "../../assets/images/icons8-cart-48 (2).png";
 import { useContext } from 'react';
 import { ContextListCart } from '../../contexts/CartContext';
 
