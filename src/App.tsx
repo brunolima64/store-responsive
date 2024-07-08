@@ -98,9 +98,9 @@ export const App = () => {
             <C.Container>
                 <C.Content>
                     <div className='categories'>
-                        <Categories title="Smartphones" image="../../public/assets/images/galaxy-z-fold5.webp" setCategory={()=>setCategory('phone')} />
-                        <Categories title="Tablets" image="../../public/assets/images/galaxy-capa-teclado.avif" setCategory={()=>setCategory('tablet')}/>
-                        <Categories title="Notebooks" image="../../public/assets/images/book2-windowns.avif" setCategory={()=>setCategory('notebook')}/>
+                        <Categories title="Smartphones" image="../assets/images/galaxy-z-fold5.webp" setCategory={()=>setCategory('phone')} />
+                        <Categories title="Tablets" image="../assets/images/galaxy-capa-teclado.avif" setCategory={()=>setCategory('tablet')}/>
+                        <Categories title="Notebooks" image="../assets/images/book2-windowns.avif" setCategory={()=>setCategory('notebook')}/>
                     </div>
                     {FilteredCat !== null &&
                         <div className='products'>
